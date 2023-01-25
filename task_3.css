@@ -1,0 +1,72 @@
+.container {
+    margin: 50px 100px;
+    padding: 10px 30px;
+}
+
+.text-input {
+    padding: 9px 15px;
+    border: 2px solid mediumslateblue;
+    border-radius: 5px;
+    outline: rgb(57, 100, 180);
+}
+
+.text-input::placeholder {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.btn {
+    padding: 9px 15px;
+    background: mediumslateblue;
+    color: #fff;
+    border: 2px solid rgb(57, 100, 180);
+    border-radius: 22px;
+    font-size: 14px;
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+
+.btn-send {
+    margin: 0 15px;
+}
+
+.btn:hover {
+    opacity: .7;
+}
+
+.output {
+    max-width: 450px;
+    padding: 10px;
+    height: 200px;
+    position: relative;
+    border: 2px solid mediumslateblue;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.output > div {
+    max-width: 80%;
+    padding: 5px 10px;
+    margin: 5px 0;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.output .recieved {
+    background: rgba(9, 125, 129, 0.479);
+    align-self: flex-start;
+}
+
+.output .sent {
+    background: rgba(8, 187, 241, 0.603);
+    align-self: flex-end;
+}
+
+.info-output,
+.geo-output {
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 10px;
+}

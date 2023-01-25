@@ -1,0 +1,44 @@
+.container {
+    margin: 50px 100px;
+}
+
+.btn {
+    padding: 10px 35px;
+    background: linear-gradient(to right, #403a3e, #be5869);
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    border: 1px solid #403a3e;
+    border-radius: 22px;
+    transition: all .2s linear;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+}
+
+.btn:hover {
+    opacity: .7;
+}
+
+.btn-icon {
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.arrow-filled {
+    display: none;
+}
+
+.arrow,
+.arrow-filled {
+    animation: fade .2s;
+}
+
+@keyframes fade {
+    0% {opacity: 1;}
+    50% {opacity: .5;}
+    100% {opacity: 0;}
+}
